@@ -2,20 +2,22 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
+    props: {
+        msg: String,
+    },
     setup() {
-        const msg = "Hello World!"
+        const info = "This is sihaixianyu's personal blog."
 
         return {
-            msg
+            info
         }
     }
 })
 </script>
 
 <template>
-    <h1>
-        {{ msg }}
-    </h1>
+    <h1>{{ msg }}</h1>
+    <p>{{ info }}</p>
 </template>
 
 <style scoped></style>
